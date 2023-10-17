@@ -19,7 +19,7 @@
     ></script>
 
     <!-- Load Vue followed by BootstrapVue -->
-    <script src="//unpkg.com/vue@latest/dist/vue.min.js"></script>
+    <script src="//unpkg.com/vue@2.6.14/dist/vue.min.js"></script>
     <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
 
     <!-- Load the following for BootstrapVueIcons support -->
@@ -36,12 +36,12 @@
             id="example-datepicker"
             v-model="value"
             class="mb-2"
-						calendar-width="330px"
+            calendar-width="330px"
             label-help=""
-						label-no-date-selected="Select a date"
-						:date-format-options="{  day: 'numeric', month: '2-digit', year: 'numeric', weekday: 'long' }"
-						:start-weekday="weekday"
-						locale="it"
+            label-no-date-selected="Select a date"
+            :date-format-options="{  day: 'numeric', month: '2-digit', year: 'numeric', weekday: 'long' }"
+            :start-weekday="weekday"
+            locale="it"
           ></b-form-datepicker>
           <p>Value: '{{ value }}'</p>
         </div>
@@ -54,8 +54,7 @@
         data: {
           message: 'hello',
           value: '',
-					weekday: 1,
-
+          weekday: 1,
         },
 
         methods: {},
